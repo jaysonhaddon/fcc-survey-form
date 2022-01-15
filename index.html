@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>freeCodeCamp Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Game Studio Survey Form</h1>
+      <p id="description">
+        <em>Help our Studio by completing this short survey</em>
+      </p>
+    </header>
+    <main>
+      <form id="survey-form" action="">
+        <fieldset>
+          <label id="name-label"
+            >Name: <input
+              id="name"
+              class="text-input"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            /></label
+          >
+          <label id="email-label"
+            >Email: <input
+              id="email"
+              class="text-input"
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            /></label
+          >
+          <label id="number-label"
+            >Age:(optional) <input
+              id="number"
+              class="text-input"
+              name="age"
+              type="number"
+              min="10"
+              max="100"
+              placeholder="Enter your age"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <label
+            >What is your favorite game genre?
+            <select id="dropdown" class="drop-menu" name="fav-genre">
+              <option value="">(select one)</option>
+              <option value="1">Action Adventure</option>
+              <option value="2">Puzzle</option>
+              <option value="3">Platformer</option>
+              <option value="4">First Person Shooter</option>
+              <option value="5">Third Person Shooter</option>
+              <option value="6">Racing</option>
+              <option value="7">Sports</option>
+            </select>
+          </label>
+          </fieldset>
+        <fieldset>
+          <label>What type of game are you more likely to purchase?</label>
+          <label
+            ><input type="radio" name="game-type" value="major-studio" checked /> Major
+            Studio (AAA)
+          </label>
+          <label
+            ><input type="radio" name="game-type" value="indie" /> Indie</label
+          >
+          <label
+            ><input type="radio" name="game-type" value="both" /> Both</label
+          >
+          <label
+            ><input type="radio" name="game-type" value="unsure" />
+            Unsure</label
+          >
+        </fieldset>
+        <fieldset>
+          <label
+            >Have you purchased any of the following titles in the last 12
+            months? (Select all that apply)</label
+          >
+          <label><input type="checkbox" value="mlb" /> MLB The Show 21</label>
+          <label
+            ><input type="checkbox" value="cod" /> Call of Duty: Vanguard</label
+          >
+          <label><input type="checkbox" value="far-cry" /> Far Cry 6</label>
+          <label><input type="checkbox" value="metroid" /> Metroid Dread</label>
+          <label><input type="checkbox" value="returnal" /> Returnal</label>
+          <label
+            ><input type="checkbox" value="takes-two" /> It Takes Two</label
+          >
+        </fieldset>
+        <fieldset>
+          <label
+            >Please provide additonal feedback here:
+            <textarea
+              name="feedback"
+              rows="10"
+              cols="30"
+              placeholder="Feedback..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+          <input id="submit" type="submit" />
+        </fieldset>
+      </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
